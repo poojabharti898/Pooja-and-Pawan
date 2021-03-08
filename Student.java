@@ -1,11 +1,12 @@
-public class Student {
-	//declaring required variables
+public class Student
+{
+      //declaring required variables
       private String name="";
       private int id;
       private double percentage;
       private String[] skills;
       
-    //constructor with all parameters
+      //constructor with all parameters
       public Student(String name,int id,double percentage,String[] skills)
       {
           this.name = name;
@@ -14,7 +15,7 @@ public class Student {
           this.skills = skills;
       }
       
-	  //constructor with parameters name and id
+      //constructor with parameters name and id
       public Student(String name,int id)
       {
           this.name = name;
@@ -27,39 +28,47 @@ public class Student {
           this.id = id;
       }
       
-	  //getter functions for all data members of class
-	public String getName() {
-		return name;
-	}
+      //getter functions for all data members of class
+      public String getName()
+      {
+          return name;
+      }
 	
-	public int getId() {
-		return id;
-	}
+      public int getId() 
+      {
+          return id;
+      }
+      
+      public double getPercentage()
+      {
+	  return percentage;
+      }
 	
-	public double getPercentage() {
-		return percentage;
-	}
-	
-	public String[] getSkills() {
-		return skills;
-	}
+      public String[] getSkills() 
+      {
+	  return skills;
+      }
 
 	
-	//setter functions for all data members of class
-    public void setName(String name) {
-		this.name = name;
-	}
+      //setter functions for all data members of class
+      public void setName(String name) 
+      {
+          this.name = name;
+      }
     
-    public void setId(int id) {
-		this.id = id;
-	}
+      public void setId(int id)
+      {
+	  this.id = id;
+      }
     
-    public void setPercentage(double percentage) {
-		this.percentage = percentage;
-	}
+      public void setPercentage(double percentage)
+      {
+	  this.percentage = percentage;
+      }
     
-   public void setSkills(String[] skills) {
-		this.skills = skills;
-   }
+      public void setSkills(String[] skills) 
+      {
+	  this.skills = skills;
+      }
 
 }
