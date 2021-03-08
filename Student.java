@@ -1,9 +1,9 @@
 public class Student {
 	//declaring required variables
-      protected  String name="";
-      protected int id;
-      protected double percentage;
-      protected String[] skills;
+      private String name="";
+      private int id;
+      private double percentage;
+      private String[] skills;
       
     //constructor with all parameters
       public Student(String name,int id,double percentage,String[] skills)
