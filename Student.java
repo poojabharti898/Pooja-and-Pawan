@@ -108,6 +108,6 @@ public class Student
 		   String new_skill = in.nextLine();
 		   skills[t+i]=new_skill;
 	    	}
-	    }
-	}
+	  }
+      }
 
