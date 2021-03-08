@@ -72,3 +72,42 @@ public class Student
       }
 
 }
+	// Operations class inherited student class.
+	class Operations extends Student
+	{
+		//constructor for subclass Operations
+		public Operations(String name,int id,double percentage,String[] skills)
+		{
+			super(name,id,percentage,skills);
+		}
+	    // Method to change the name of the student.
+	    public void changeName(String name)
+	    {
+	        this.name = name;
+	    }
+	   
+	    // Method to change name as per user input.
+	    public void changeName()
+	    {
+	        System.out.print("Enter New Name : ");
+	        Scanner in = new Scanner(System.in);
+	        String new_name = in.nextLine();
+	        this.name = new_name;
+	    }
+	    //method to add additional 5 skills
+	    public void addskill()
+	    {
+	    	//variable to store current size of skills array
+	    	int t=skills.length;
+	    	//user inputs new skills and append to skills array
+	    	for(int i=0;i<5;i++)
+	    	{
+	    		
+	    		System.out.println("Enter a skill");
+	    		Scanner in = new Scanner(System.in);
+		        String new_skill = in.nextLine();
+		        skills[t+i]=new_skill;
+	    	}
+	    }
+	}
+
