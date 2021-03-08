@@ -60,12 +60,6 @@ public class Student {
     
    public void setSkills(String[] skills) {
 		this.skills = skills;
-	}
-
-   
-   
-	public static void main(String[] args) {
-		
-	}
+   }
 
 }
